@@ -61,4 +61,11 @@ public class TrainSystemTest {
 		controller.followSpeed();
 		Assert.assertEquals(10, controller.getReferenceSpeed());
 	}
+
+	@Test
+	public void ifTachographTableHasElements(){
+		user.overrideJoystickPosition(4);
+		controller.followSpeed();
+		assertThat(controller.getTachograph().getTable().get(1,4)).isEqualTo(4);
+	}
 }
