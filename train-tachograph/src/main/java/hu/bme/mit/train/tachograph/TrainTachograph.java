@@ -1,5 +1,5 @@
 
-public class TrainTachograph {
+/*public class TrainTachograph {
     private Table<Integer, Integer, Integer> table;
 
     public TrainTachograph() {
@@ -14,6 +14,6 @@ public class TrainTachograph {
         return table;
     }
 
-}
+}*/
 
 
